@@ -53,6 +53,9 @@
     >
       <header>
         <div class="nav">
+          <a href="#about" class="nav-link">
+            <i class="material-icons">info</i>
+          </a>
           <a href="#" class="nav-link" x-show="page !== ''" x-cloak>
             <i class="material-icons">arrow_back</i>
           </a>
@@ -70,6 +73,26 @@
           </a>
         </div>
       </header>
+      <div class="about-content" x-show="page === '#about'" x-cloak>
+        <p>Wordling is a daily world puzzle geared at young spellers.</p>
+
+        <h1>Features</h1>
+        <ul>
+          <li>Age appropriate words</li>
+          <li>Enter letters in any order</li>
+          <li>3 difficulty settings</li>
+          <li>Emoji colectables</li>
+          <li>Kid-friendly font</li>
+        </ul>
+
+        <h1>How To Play</h1>
+
+        <h1>Creators</h1>
+        <ul>
+          <li>Chris Porter</li>
+          <li>David Hirtle</li>
+        </ul>
+      </div>
       <div class="game-content" x-show="page === ''">
         <div class="guesses-container">
           <div class="guesses">
@@ -158,9 +181,6 @@
             </template>
           </template>
         </div>
-      </div>
-      <div class="help-content" x-show="page === '#help'" x-cloak>
-        <h1>Help</h1>
       </div>
       <div class="collection-content" x-show="page === '#collection'" x-cloak>
         <h1>Collection</h1>
